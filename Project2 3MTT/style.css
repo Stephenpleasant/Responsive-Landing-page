@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+.container{
+   background-color: #fa5a5a;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.logo img{
+    width: 8%;
+    border-radius: 50%;
+    margin:  10px 0 0 10px;
+}
+.head ul{
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+.head ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+.head ul li a{
+    color: #000;
+}
+.head ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* desktop */
+@media only screen and (min-width:1000px) {
+
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .head ul{
+        margin: 35px 100px 0 0;
+    }
+    .head ul li a{
+        color: #000;
+        font-size: 1.3rem;
+    }
+}
+
+/* main */
+.hero{
+    margin: 20px;
+    
+}
+.hero h1{
+    text-align: center;
+    
+}
+.hero p{
+    text-indent: 10px;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+.hero button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f08080;
+    border-color: #f08080;
+    margin-top: 10px;
+
+}
+.hero button:hover{
+    background-color: #b41111;
+    color: #fff;
+}
+.apple{
+    width: 400px; 
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.box img{
+    height: 200px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box p{
+    font-size: .8rem;
+    text-align: justify;
+}
+
+@media only screen and (min-width:1000px) {
+    .hero{
+        margin: 30px 20px ;
+    }
+    .hero h1{
+       font-size: 2rem;
+        
+    }
+    .hero p{
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .apple{ 
+        width: 90%;
+        margin: 0;
+       display: flex;
+       justify-content: space-between;
+    }
+    .box{
+        margin-left: 50px;
+    }
+    .box h2{
+        text-align: center;
+        color: #000;
+    }
+    .box img{
+        margin-left: 40px;
+    }
+}
+
+/* footer */
+footer{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0 20px 20px;
+}
+footer ul li{
+    list-style: none;
+    line-height: 2rem;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 30px;
+ }
+/* desktop */
+@media only screen and (min-width:1000px){
+    
+footer h1{
+    text-align: center;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+footer ul li{
+    font-size: .9rem;
+}
+}
